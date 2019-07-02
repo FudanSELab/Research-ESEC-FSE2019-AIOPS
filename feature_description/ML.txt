@@ -1,0 +1,7 @@
+﻿Feature Description:
+
+ML: memory limit of the current microservice relative to the node memory limit
+Scope: Invocation
+Detail description:
+    ML is the ratio of the memory limit of the current microservice which is configured in Docker to the node memory limit. For
+example, the memory limit of the  current microservice is 1 GB, and the node memory limit is 32 GB, so the ML is 0.03125.

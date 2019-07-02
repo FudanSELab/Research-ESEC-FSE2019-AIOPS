@@ -1,0 +1,8 @@
+Feature Description:
+
+IIN: number of the instances of the current microservice that are invoked in the current trace instance
+Scope: Trace
+Detail description:
+    IIN is the number of the instances of the current microservice that are invoked in the current trace instance. For example, 
+the trace instance is A1 -> B1 -> C1 -> D2 ("A" is microservice's name, "1" is the instance id), so the IIN of microservice A
+is 1.

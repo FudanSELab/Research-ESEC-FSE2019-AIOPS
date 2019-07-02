@@ -1,0 +1,7 @@
+Feature Description:
+
+TN: number of the threads of the current microservice instance
+Scope: Invocation
+Detail description:
+    TN  is the number of the threads of the current microservice instance. We can obtain it by analazing the JVM stack dump files.
+The bigger the TN is, the higer the resource consumption is, so it may cause the system to be erroneous.

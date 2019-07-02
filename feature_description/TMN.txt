@@ -1,0 +1,8 @@
+Feature Description:
+
+TMN: number of microservices that are invoked in the current trace instance
+Scope: Trace
+Detail description:
+    TMN is the number of microservices that are invoked in the current trace instance. For example, the invocation chain of the 
+current trace instance is:A -> B -> C -> D, so the TMN is 4.
+	

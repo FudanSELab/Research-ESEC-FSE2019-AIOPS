@@ -1,0 +1,8 @@
+Feature Description:
+
+NIN: number of microservice instances residing in the current node
+Scope: Invocation
+Detail description:
+    NIN is the number of microservice instances residing in the current node. Microservice instances can reside in the same or
+different node. For example, microservice instances A1, B2 and C2 reside in node N1 and microservice instances A2 and B1 reside
+in node N2, so the NIN of node N1 is 3 and the NIN of node N2 is 2.

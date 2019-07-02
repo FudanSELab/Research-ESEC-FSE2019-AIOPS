@@ -1,0 +1,8 @@
+Feature Description:
+
+CA: whether the cache is accessed in the current invocation
+Scope: Invocation
+Detail description:
+    CA means whether the cache is accessed in the current invocation. If the current invocation accesses the cache, such as JVM
+cache, it may cause the multi-instance failure. For example, microservice instance A1 uses key "key1" to accesse the cache and 
+changes the key from "key1" to "key2". Then if microservice instance A2 still uses "key1" to accesse the cache, it will be failed.

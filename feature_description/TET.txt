@@ -1,0 +1,8 @@
+Feature Description:
+
+TET: execution time of the current trace instance
+Scope: Trace
+Detail description:
+    TET is the execution time of the current trace instance. For example, the invocation chain of the current trace instance is:
+A -> B -> C -> D, so the TET is the total time of the invocations "A -> B", "B -> C" and "C -> D".
+	

@@ -1,0 +1,7 @@
+Feature Description:
+
+NMC: memory consumption of the current node relative to its memory limit
+Scope: Invocation
+Detail description:
+    NMC is the ratio of the memory consumption of the current node to its memory limit. For example, the memory consumption of the
+current node is 16 GB, and the its memory limit is 32 GB, so the NMC is 0.5.

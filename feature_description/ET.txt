@@ -1,0 +1,7 @@
+Feature Description:
+
+ET: execution time of the current microservice invocation
+Scope: Invocation
+Detail description:
+    ET is the execution time of the current microservice invocation. This time contains 3 parts: the time of the request sending from 
+caller to callee, the time of processing the request in callee and the time of the response sending from callee to caller.

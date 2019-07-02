@@ -1,0 +1,7 @@
+Feature Description:
+
+NCC: CPU consumption of the current node relative to its CPU limit
+Scope: Invocation
+Detail description:
+    NCC is the ratio of the CPU consumption of the current node to its CPU limit. For example, the CPU consumption of the
+current node is 4 Core, and the its CPU limit is 8 Core, so the NNC is 0.5.

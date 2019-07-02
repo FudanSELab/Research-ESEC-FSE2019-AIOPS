@@ -1,0 +1,8 @@
+Feature Description:
+
+IN: instance number of the current microservice in the whole system
+Scope: Global
+Detail description:
+    IN is instance number of the current microservice in the whole system which is configured in deployment files of Kubernetes. For 
+example, the instance number of microservice "ts-login-service" is 3, so it is configured as "replicas: 3" in the deployment file 
+of Kubernetes.

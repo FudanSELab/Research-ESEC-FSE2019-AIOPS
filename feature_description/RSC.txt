@@ -1,0 +1,7 @@
+Feature Description:
+
+RSC: HTTP response status code of the current microservice invocation
+Scope: Invocation
+Detail description:
+    RSC is the HTTP response status code of the current microservice invocation. We can judge whether the request is successful
+throught it. Generally, "200" means successful, "400" means client error and "500" means server error.

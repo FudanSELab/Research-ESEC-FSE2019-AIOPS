@@ -1,0 +1,7 @@
+Feature Description:
+
+MC: memory consumption of the current microservice instance relative to its memory limit
+Scope: Invocation
+Detail description:
+    MC is the ratio of the memory consumption of the current microservice instance to its memory limit which is configured in Docker. For
+example, the memory consumption of the current microservice is 512 MB, and the its memory limit is 1 GB, so the MC is 0.5.

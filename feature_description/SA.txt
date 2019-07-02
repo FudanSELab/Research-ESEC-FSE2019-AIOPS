@@ -1,0 +1,9 @@
+Feature Description:
+
+SA: whether the third party storage (e.g., database) is accessed in the current invocation
+Scope: Invocation
+Detail description:
+    SA means whether the third party storage (e.g., Redis) is accessed in the current invocation. If the current invocation
+accesses the Redis, it may cause the multi-instance failure. For example, microservice instance A1 uses id "id1"
+to accesse the Redis and changes the id from "id1" to "id2". Then if microservice instance A2 still uses "id1" to accesse 
+the Redis, it will be failed.

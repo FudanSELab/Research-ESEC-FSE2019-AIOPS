@@ -1,0 +1,7 @@
+Feature Description:
+
+CC: CPU consumption of the current microservice instance relative to its CPU limit
+Scope: Invocation
+Detail description:
+    CC is the ratio of the CPU consumption of the current microservice instance to its CPU limit which is configured in Docker. For
+example, the CPU consumption of the current microservice is 0.5 Core, and the its CPU limit is 1 Core, so the CC is 0.5.

@@ -1,0 +1,11 @@
+Feature Description:
+
+AIT: time of an asynchronous invocation in the current microservice execution
+Scope: Invocation
+Detail description:
+    AIT is time of an asynchronous invocation in the current microservice execution. For example, the invocation chain of the
+current microservice execution is:
+       A -> B -> C -> D
+	           -> E
+	In this chain, the invocations of A, B and C are synchronous, and invocations of C, D and E are asynchronous. The AIT is the
+total time of the asynchronous invocations of "C -> D" and "C -> E"

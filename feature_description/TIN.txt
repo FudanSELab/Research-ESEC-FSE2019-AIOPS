@@ -1,0 +1,12 @@
+Feature Description:
+
+TIN: number of microservice instances that are invoked in the current trace instance
+Scope: Trace
+Detail description:
+    TIN is the number of microservice instances that are invoked in the current trace instance. For example, the invocation chain of the 
+current trace instance is:
+    A1 -> B1 -> C2 -> D1 -> E1
+	                 -> B2
+	(A1: "A" is microservice, "1" is instance id. D1 invokes E1 and B2 asynchronously.)
+	In this case, the TIN of microservice B is 2, and the TIN of others microservice is 1.
+	

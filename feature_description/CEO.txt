@@ -1,0 +1,8 @@
+Feature Description:
+
+CEO: whether the execution order of a pair of asynchronous invocations is consistent with their invocation order
+Scope: Invocation
+Detail description:
+    CEO means whether the execution order of a pair of asynchronous invocations is consistent with their invocation order. For 
+example, microservice A invokes the microservice B and C asynchronously, while the request to C is processed earlier than the
+request to B, so the CEO is false.

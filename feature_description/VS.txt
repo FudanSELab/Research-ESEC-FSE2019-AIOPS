@@ -1,0 +1,7 @@
+Feature Description:
+
+VS: whether volume support is enabled for the current microservice
+Scope: Global
+Detail description:
+    VS means whether volume support is enabled for the current microservice. If it is enabled, the current microservice can share
+files with the host which it resides in. 0 means it is disenabled, and 1 means it is enabled.

@@ -1,0 +1,7 @@
+Feature Description:
+
+CL: CPU limit of the current microservice relative to the node CPU limit
+Scope: Invocation
+Detail description:
+    CL is the ratio of the CPU limit of the current microservice which is configured in Docker to the node CPU limit. For
+example, the CPU limit of the current microservice is 1 Core, and the node CPU limit is 8 Core, so the CL is 0.125.

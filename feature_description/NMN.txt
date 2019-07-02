@@ -1,0 +1,8 @@
+Feature Description:
+
+NMN: number of microservices whose instances reside in the current node
+Scope: Invocation
+Detail description:
+    NMN is the number of microservices whose instances reside in the current node. Microservice instances can reside in the same 
+or different node. For example, microservice A has 3 instances: A1, A2 and A3, and residing in node N1, N1, and N2, so the NMN of 
+node N1 for microservice A is 2.

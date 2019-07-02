@@ -1,0 +1,7 @@
+Feature Description:
+
+LT: life time of the current microservice instance since its creation
+Scope: Invocation
+Detail description:
+    LT  is the life time of the current microservice instance since its creation. We can obtain it through the Kubernetes APIs. 
+The bigger the LT is, the easier the microservice instance is to be erroneous.

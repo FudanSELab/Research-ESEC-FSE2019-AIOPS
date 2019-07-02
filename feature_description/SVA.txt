@@ -1,0 +1,7 @@
+Feature Description:
+
+SVA: ratio of the shared variables that are accessed in the current invocation
+Scope: Invocation
+Detail description:
+    SVA is the ratio of the shared variables that are accessed in the current invocation. For example, there are 10 shared variables,
+and 5 shared variables are accessed in the current invocation, so the SVA is 0.5.
