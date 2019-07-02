@@ -1,0 +1,22 @@
+
+
+Industrial fault description:
+
+F5 is such kind of fault which is caused by the resource competition of multiple requests.
+Sometimes a microservice has its maximum number of connections by using thread pool.
+Suppose we have 3 services, A, B, C. A and B both call C for some specific information.
+If A send some requests to C, but before that B has sent some requests to C and these requests are too complex to process at a short time, then
+the requests from A must wait until the requests from B completed, leading to a timeout exception.
+
+
+
+TrainTicket replicated fault description:
+
+We implemented this fault in travel services. 
+We use asynchronous tasks implemented by thread pool in travel services to consume the resource.
+Then we send many requests at a short period of time and the thread of these requests will apply for resource while there is not enough, so the fault will occur.
+
+
+
+
+

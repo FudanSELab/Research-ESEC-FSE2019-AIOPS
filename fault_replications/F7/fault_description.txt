@@ -1,0 +1,23 @@
+
+
+Industrial fault description:
+
+F7 is a fault which occurs in a third-party service and then leads to a failure.
+We always need to call a microservice that maintained by a third-party or company.
+Sometimes the response from the microservice maintained by others may be timeout and returns nothing, or even return wrong information.
+Then this kind of fault occurs.
+
+
+
+TainTicket replicated fault description:
+
+In TainTicket system, if the user want to buy a ticket but the balance is not enough, the system will call a third-party service implemented by Node.js to get the ticket money. 
+Sometimes there will be a delay caused by insufficient resource such as CPU in this third-party service, then the timeout will be triggered and the fault occurs.
+
+
+
+
+
+
+
+

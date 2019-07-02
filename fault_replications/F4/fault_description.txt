@@ -1,0 +1,20 @@
+
+
+Industrial fault description:
+
+F4 is fault of SSL offloading which leads to the response time for some requests is very long.
+
+
+
+TrainTicket replicated fault description:
+
+In TrainTicket system, we apply SSL to every microservice and simulate the processing for it.
+When we send requests about some complex logic which need to load and validate the SSL, we will find that the response time is very long.
+In this way, the faults occurs.
+
+
+
+
+
+
+

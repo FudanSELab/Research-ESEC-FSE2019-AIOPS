@@ -1,0 +1,15 @@
+Industrial fault description:
+
+There is a Right To Left (RTL) display error for UI words.
+There is a CSS display style error in bi-directional.
+
+
+TrainTicket replicated fault description:
+
+Fault occurs when convert from LTR to RTL in Login Block.
+
+
+
+
+
+

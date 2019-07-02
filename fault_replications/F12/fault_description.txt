@@ -1,0 +1,25 @@
+
+
+Industrial fault description:
+
+F12 is one kind of faults that occurs due to the specific status of some microservice.
+The word "status" has a wide range of meanings, for example, a global value in one microservice.
+If a microservice is in some specific "status", the fault occurs.
+This kind of faults only occurs in some specific status of a microservice.
+Because the fault only occurs in specific status, when we analyze the root cause of the microservice, we must combine the microservice status.
+
+
+TrainTicket replicated fault description:
+
+We replicated fault F12 in the TrainTicket System, which have two specific status in Order-Service: locked station and thread-pool size.
+If the admin is operating the orders between two stations, such two stations will be added to the locked station list.
+And the thread-pool is used for Order-Service to do some asynchronous tasks.
+If the user want to cancel a order whose start station or terminal station is in the locked station list, the request will be rejected.
+Then the fault occurs.
+
+
+
+
+
+
+

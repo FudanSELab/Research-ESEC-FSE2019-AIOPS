@@ -1,0 +1,26 @@
+
+
+Industrial fault description:
+
+F11 is a fault due to the lack of sequence control.
+Note that such a fault may not always occur, making  it difficult to analyze.
+Sometimes if a return value is too far from the normal value, the microsevice will recheck the correctness of the value and correct it.
+But this process does not always happen, making the result sometimes wrong but sometimes right.
+
+
+
+TrainTicket replicated fault description:
+
+In TrainTicket system, there are two microservices set the same value in the database in order cancellation process.
+Due to the lack of control like F1, the two microservices may set the value in a wrong sequence.
+However, the second microservice that set the value may recheck the value and correct the value.
+The recheck process does not always happen.
+If two microservices set the value in a wrong sequence but the recheck process does not executed, this fault occurs.
+
+
+
+
+
+
+
+

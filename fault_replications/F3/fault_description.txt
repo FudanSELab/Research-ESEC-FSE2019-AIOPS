@@ -1,0 +1,22 @@
+
+
+Industrial fault description:
+
+F3 is a fault which occurs when the microservice is not properly configured.
+If a micorservice is implemented by Java and using Docker as container, JVM and Docker configuration is needed.
+However, JVM and Docker both have same configuration such as memory limit and cpu limit, while configuration in JVM and configuration in Docker influences each other.
+If these configuration is not properly set, the microservice will have some unexpected behavior.
+
+
+
+TrainTicket replicated fault description:
+
+In the reproduction of F3, we mis-configured some microservices that the JVM memory limit is bigger than the Docker memory limit such as the travel services.
+In this case, if the requests occupy too much memory, the JVM process will be killed, leading to the microservices unavailable periodly.
+Then the fault occurs.
+
+
+
+
+
+
