@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>MEPFL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+ <script type="text/javascript"  src="js/menu.js"></script>
+<!-- start top_js_button -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+	 	<!---strat-slider---->	
+	    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+			<script type="text/javascript">
+				$(function() {
+				
+					// $('#da-slider').cslider({
+					// 	autoplay	: true,
+					// 	bgincrement	: 450
+					// });
+				
+				});
+			</script>
+		<!---//strat-slider---->
+		
+</head>
+<body>
+<!-- start header -->
+
+<h2 class="heading" style="padding-top:30px;">The Replication Package of MEPFL</h2>
+
+
+<!-- <hr>
+
+<div class="our_team" id="ourteam">
+	<div class="wrap">
+		<h3 class="heading">Benchmark System: TrainTicket</h3>
+		<p class="desc">TrainTicket provides typical train ticket booking functionalities such as ticket enquiry, reservation, payment, change, and user notification.</p>
+		<p class="desc">41 microservices</p>
+		<p class="desc">4 languages: java, nodejs, python, go</p>
+		<p class="desc">Cluster Environment: Docker Swarm or Kubernetes</p>
+        <p class="desc"><a href="fault_replications/system_architecture.png">Architecture of Train Ticket System</a></p>
+		<p class="desc"><a href="fault_replications/train_ticket.zip">Source Code of Train Ticket System</a></p>
+		<p class="desc"><a href="debugging/build.txt">Train Ticket System Setup</a></p>
+	</div>
+</div> -->
+
+<hr>
+
+<div class="features" id="features">
+	<div class="wrap">
+		<h3 class="heading">Feature Definition</h3>
+		<p class="desc">Complete list of the candidate features</p>
+		<table class="table">  
+			<thead>  
+				<tr>
+					<th>Feature</th>
+					<th>Description</th>
+					<th>Scope</th>
+					<th>Detail Description</th>
+				</tr>  
+			</thead>
+			<tbody> 
+				<tr>
+					<td>ML</td>
+					<td>memory limit of the current microservice relative to the node memory limit</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/ML.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>CL</td>
+					<td>CPU limit of the current microservice relative to the node CPU limit</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/CL.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>VS</td>
+					<td>whether volume support is enabled for the current microservice</td>
+					<td>Global</td>
+					<td><a href="feature_description/VS.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>MC</td>
+					<td>memory consumption of the current microservice instance relative to its memory limit</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/MC.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>CC</td>
+					<td>CPU consumption of the current microservice instance relative to its CPU limit</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/CC.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>NMC</td>
+					<td>memory consumption of the current node relative to its memory limit</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/NMC.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>NCC</td>
+					<td>CPU consumption of the current node relative to its CPU limit</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/NCC.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>IN</td>
+					<td>instance number of the current microservice in the whole system</td>
+					<td>Global</td>
+					<td><a href="feature_description/IN.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>IIN</td>
+					<td>number of the instances of the current microservice that are invoked in the current trace instance</td>
+					<td>Trace</td>
+					<td><a href="feature_description/IIN.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>SVA</td>
+					<td>ratio of the shared variables that are accessed in the current invocation</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/SVA.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>CA</td>
+					<td>whether the cache is accessed in the current invocation</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/CA.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>SA</td>
+					<td>whether the third party storage (e.g., database) is accessed in the current invocation</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/SA.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>TN</td>
+					<td>number of the threads of the current microservice instance</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/TN.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>LT</td>
+					<td>life time of the current microservice instance since its creation</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/LT.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>NIN</td>
+					<td>number of microservice instances residing in the current node</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/NIN.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>NMN</td>
+					<td>number of microservices whose instances reside in the current node</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/NMN.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>ET</td>
+					<td>execution time of the current microservice invocation</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/ET.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>RSC</td>
+					<td>HTTP response status code of the current microservice invocation</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/RSC.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>AIT</td>
+					<td>time of an asynchronous invocation in the current microservice execution</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/AIT.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>CEO</td>
+					<td>whether the execution order of a pair of asynchronous invocations is consistent with their invocation order</td>
+					<td>Invocation</td>
+					<td><a href="feature_description/CEO.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>TET</td>
+					<td>execution time of the current trace instance</td>
+					<td>Trace</td>
+					<td><a href="feature_description/TET.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>TMN</td>
+					<td>number of microservices that are invoked in the current trace instance</td>
+					<td>Trace</td>
+					<td><a href="feature_description/TMN.txt">Detail Description</a></td>
+				</tr>
+				<tr>
+					<td>TIN</td>
+					<td>number of microservice instances that are invoked in the current trace instance</td>
+					<td>Trace</td>
+					<td><a href="feature_description/TIN.txt">Detail Description</a></td>
+				</tr>
+
+
+				
+				
+			</tbody>
+		</table>
+		
+	</div>
+</div>
+
+<hr>
+
+<div class="data" id="data">
+	<div class="wrap">
+		<h3 class="heading">Experiment Data</h3>
+		<p class="desc"><a href="feature_description/relation_ships.xlsx">The Pearson Correlation Coefficient of Microservice Level Features and Latent Errors</a></p>
+		<!-- <p class="desc"><a href="https://github.com/microcosmx/train_ticket">Train Ticket System</a></p>
+		<p class="desc"><a href="https://github.com/microservices-demo/microservices-demo">Sock Shop System</a></p> -->
+		<p class="desc"><a href="https://ieeexplore.ieee.org/document/7484300">TPDS Method (From Paper: Failure Diagnosis for Distributed Systems Using Targeted Fault Injection)</a></p>
+		<p class="desc">The Extracted Training Data (Machine Learning and TPDS)</p>
+		<table class="table">  
+			<thead>  
+				<tr>
+					<th>Microservice System</th>
+					<th>Method</th>
+					<th>Description</th>
+					<th>Data</th>
+				</tr>  
+			</thead>
+			<tbody> 
+				<tr>
+					<td>Train Ticket</td>
+					<td>Machine Learning</td>
+					<td>Data of Machine Learning Method on Train Ticket Microservice System</td>
+					<td><a href="data/mepfl/ts/">Data</a></td>
+				</tr> 
+				<tr>
+					<td>Sock Shop</td>
+					<td>Machine Learning</td>
+					<td>Data of Machine Learning Method on Sock Shop Microservice System</td>
+					<td><a href="data/mepfl/ss/">Data</a></td>
+				</tr> 
+				<tr>
+					<td>Train Ticket</td>
+					<td>TPDS</td>
+					<td>Data of Machine Learning Method on Train Ticket Microservice System</td>
+					<td><a href="data/tpds/ts/">Data</a></td>
+				</tr> 
+
+				
+				<tr>
+					<td>Sock Shop</td>
+					<td>TPDS</td>
+					<td>Data of Machine Learning Method on Sock Shop Microservice System</td>
+					<td><a href="data/tpds/ss/">Data</a></td>
+				</tr> 
+				
+			</tbody>
+		</table>
+		
+	</div>
+</div>
+
+<hr>
+
+<div class="latest_wroks" id="portfolio">
+<div class="wrap">
+		<h3 class="heading">Real-World Fault Cases</h3>
+		<p class="desc">The related materials used in the experimental study of "Effectiveness for Real-World Fault Cases"</p>
+		<p class="desc">
+			<table class="table">  
+		        <thead>  
+		            <tr>
+		            	<th>Fault Case</th>
+		            	<th>Fault Type</th>
+		            	<th>Fault Detail Description</th>
+		            	<th>Source Code of Train Ticket System(with fault)</th>
+		            </tr>  
+		        </thead>  
+		        <tbody>  
+		            <tr>
+			            <td>F1</td>
+			            <td>Asychronous Invocation</td>
+			            <td><a href="fault_replications/F1/fault_description.txt">Fault Detail Description</a></td>
+			            <td><a href="fault_replications/F1/fault_system_sourcecode/fault_system_F1.zip">Source Code of Train Ticket System(with fault)</a></td>
+		            </tr>  
+		            <tr>
+		            	<td>F2</td>
+			            <td>Asychronous Invocation</td>
+			            <td><a href="fault_replications/F2/fault_description.txt">Fault Detail Description</a></td>
+			            <td><a href="fault_replications/F2/fault_system_sourcecode/fault_system_F2.zip">Source Code of Train Ticket System(with fault)</a></td>
+		            </tr>  
+		            <tr>
+		            	<td>F3</td>
+			            <td>Configuration</td>
+			            <td><a href="fault_replications/F3/fault_description.txt">Fault Detail Description</a></td>
+			            <td><a href="fault/fault_system_F3.zip">Source Code of Train Ticket System(with fault)</a></td>
+		            </tr>  
+		            <tr>
+		            	<td>F4</td>
+			            <td>Configuration</td>
+			            <td><a href="fault_replications/F4/fault_description.txt">Fault Detail Description</a></td>
+			            <td><a href="fault/fault_system_F4.zip">Source Code of Train Ticket System(with fault)</a></td>
+		            </tr>  
+		            <tr>
+		            	<td>F5</td>
+			            <td>Configuration</td>
+			            <td><a href="fault_replications/F5/fault_description.txt">Fault Detail Description</a></td>
+			            <td><a href="fault/fault_system_F5.zip">Source Code of Train Ticket System(with fault)</a></td>
+		            </tr>  
+		            <tr>
+		            	<td>F7</td>
+			            <td>Configuration</td>
+			            <td><a href="fault_replications/F7/fault_description.txt">Fault Detail Description</a></td>
+			            <td><a href="fault/fault_system_F7.zip">Source Code of Train Ticket System(with fault)</a></td>
+		            </tr>  
+		            <tr>
+		            	<td>F8</td>
+			            <td>Multi-Instance</td>
+			            <td><a href="fault_replications/F8/fault_description.txt">Fault Detail Description</a></td>
+			            <td><a href="fault/fault_system_F8.zip">Source Code of Train Ticket System(with fault)</a></td>
+		            </tr>  
+		            <tr>
+		            	<td>F11</td>
+			            <td>Multi-Instance</td>
+			            <td><a href="fault_replications/F11/fault_description.txt">Fault Detail Description</a></td>
+			            <td><a href="fault/fault_system_F11.zip">Source Code of Train Ticket System(with fault)</a></td>
+		            </tr>  
+		            <tr>
+		            	<td>F12</td>
+			            <td>Multi-Instance</td>
+			            <td><a href="fault_replications/F12/fault_description.txt">Fault Detail Description</a></td>
+			            <td><a href="fault/fault_system_F12.zip">Source Code of Train Ticket System(with fault)</a></td>
+		            </tr>  
+		            <tr>
+		            	<td>F13</td>
+			            <td>Asychronous Invocation</td>
+			            <td><a href="fault_replications/F13/fault_description.txt">Fault Detail Description</a></td>
+			            <td><a href="fault_replications/F13/fault_system_sourcecode/fault_system_F13.zip">Source Code of Train Ticket System(with fault)</a></td>
+		            </tr>  
+		        </tbody>  
+		    </table>  
+		</p>
+</div>
+</div>
+
+
+
+
+</body>
+</html>		
+		
