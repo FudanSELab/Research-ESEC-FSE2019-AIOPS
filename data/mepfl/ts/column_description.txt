@@ -1,0 +1,79 @@
+========
+The following are all feature we collected in our original data.
+Note that many of the features are not used when training ML model.
+We just collect as many as metrics but we only use the most relevant features.
+Some features are calculated in the later data preprocessing step.
+========
+
+y_issue_ms
+    (LE) The name of microservice that have the fault.
+y_final_result
+    (MS) The result of the trace(Success/Fail).
+y_issue_dim_type
+    (FT) The fault dimension of the trace.
+svc_servicename
+    The service name.
+svc_l_cpu
+    CL in the table.
+svc_l_memory
+    ML in the table.
+svc_confnumber
+    The number of instances of a service that configured in configuration.
+svc_readynumber
+    IN in the table.
+svc_ready_delay
+    The time that this service instance stand in state "ready".
+svc_down_delay
+    The time that this service instance stand in an innormal state.
+svc_shared_variable
+    SVA in the table
+svc_volume_support
+    VS in the table.
+svc_versioning
+    Whether the service have multi-version.
+svc_version_ratio
+    The ratio of the latest version of this service
+svc_dependent_db
+    SA in the table.
+svc_dependent_cache
+    CA in the table.
+svc_inst_memory
+    The memory occupied of the service instance.
+svc_inst_cpu
+    The CPU occupied of the service instance.
+svc_inst_service_version
+    The version number of this service instance.
+svc_inst_node_id
+    The node id that this service instance reside in.
+svc_inst_node_cpu
+    The CPU occupied at that time.
+svc_inst_node_memory
+    The memory occupied at that time.
+svc_inst_node_cpu_limit
+    The CPU limit of the node that this service instance reside on.
+svc_inst_node_memory_limit
+    The memory limit of the node that this service instance reside on.
+svc_inst_node_mem_diff
+    MC in the table.
+svc_inst_node_cpu_diff
+    CC in the table.
+svc_node_instance_count
+    NIN the the table
+svc_inst_up_time
+    LT in the table.
+svc_app_thread_count
+    TN in the table.
+svc_included
+    Whether this svc is included in this trace.
+svc_api
+    The name of API that used in this trace.
+svc_inst_id
+    The instance ID of this service which is included in this trace.
+svc_inst_status_code
+    RSC in the code.
+svc_exec_time
+    ET in the table.
+svc1_svc2_caller
+    The caller of a pair of asynchronous invocations. For example, microservice A invokes B and C asynchonously, the B_C_caller is A.
+svc1_svc2_seq
+    CEO in the table.
